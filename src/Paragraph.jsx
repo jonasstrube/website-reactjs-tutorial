@@ -1,3 +1,3 @@
-export function Paragraph(params) {
-    return <p>Das ist ein React Component per Function-Call!</p>;
+export function Paragraph(props) {
+    return <p>{props.text}</p>;
 }
