@@ -4,9 +4,7 @@ const myElement = React.createElement(
     'Das ist mein erstes React Element'
 );
 
-const myJSXElement = <p id='my-id'>Das ist meine erste JSX Komponente</p>
+const domTarget = document.getElementById('react-app')
+const myJSXElement = <p id='my-id'>Das ist meine erstes JSX Element</p>
 
-ReactDOM.render(
-    myJSXElement,
-    document.getElementById('react-app')
-);
+ReactDOM.render(<App/>, domTarget);

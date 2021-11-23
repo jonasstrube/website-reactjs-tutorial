@@ -4,8 +4,9 @@
   "description": "Das ist eine Einführung in React!",
   "main": "src/app.js",
   "scripts": {
-    "start": "npx servor",
-    "compile": "babel src --out-dir lib",
+    "start": "npx servor ./public --reload",
+    "compile:once": "babel src --out-dir public/lib",
+    "compile": "babel src --out-dir public/lib --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonas Strube",
