@@ -1,3 +1,3 @@
 export function Paragraph(props) {
-    return <p>{props.text}</p>;
+    return <p className="paragraph">{props.text}</p>;
 }
