@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { App } from './app/App';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './styles.css';
+import { App } from "./app/App";
 
-const domTarget = document.querySelector('#my-react-app');
-
-ReactDOM.render(<App />, domTarget);
+ReactDOM.render(
+    <App />,
+    document.getElementById('my-react-application')
+)
