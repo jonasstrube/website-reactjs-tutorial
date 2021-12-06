@@ -1,6 +1,6 @@
 import React from "react";
 
-export class Counter extends React.Component {
+export class CounterPure extends React.PureComponent {
     constructor(props){
         super(props);
         this.onClick = this.onClick.bind(this)
@@ -14,8 +14,9 @@ export class Counter extends React.Component {
     onClick(){
         console.log("geklickt!")
         this.setState(state => {
-            state.counterValue++
-            return state
+            return{
+                counterValue: state.counterValue + 1
+            }
         })
     }
 
