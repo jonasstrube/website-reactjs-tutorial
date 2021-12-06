@@ -3,6 +3,7 @@ import React from "react";
 export class Counter extends React.Component {
     constructor(props){
         super(props);
+        this.onClick = this.onClick.bind(this)
 
         this.state = {
             counterValue: 0
@@ -13,7 +14,9 @@ export class Counter extends React.Component {
     onClick(){
         console.log("geklickt!")
         this.setState((state, props) => {
-            
+            return{
+                counterValue: this.state.counterValue + 1
+            }
         })
     }
 
